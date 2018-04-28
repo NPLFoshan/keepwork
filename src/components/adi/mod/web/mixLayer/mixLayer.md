@@ -25,22 +25,22 @@
 - link :  //按钮点击跳转链接
 - target :  //链接从新窗口打开或本窗口打开
 
-#media2
+#mediaTwo
 - src  : //当前图片地址
 - link : //当前图片跳转链接
 
-#title2
+#titleTwo
 - name : //当前标题内容
 - link : //当前标题跳转链接
 
-#subtitle2
+#subtitleTwo
 - name : //当前副标题内容
 - link : //当前副标题跳转链接
 
-#paragraph2
+#paragraphTwo
 - data : //当前文档内容
 
-#button2  
+#buttonTwo  
 - name :  //按钮名称
 - link :  //按钮点击跳转链接
 - target :  //链接从新窗口打开或本窗口打开

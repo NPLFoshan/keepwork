@@ -22,25 +22,25 @@ let emptyData = {
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
   },
-  media2: {
+  mediaTwo: {
     emptySrc: require('@/../static/adi/mixLayer/mix-layer.png'),
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
   },
-  title2: {
+  titleTwo: {
     emptyName: 'adi.mixLayer.title',
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
   },
-  subtitle2: {
+  subtitleTwo: {
     emptyName: 'adi.mixLayer.subtitle',
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
   },
-  paragraph2: {
+  paragraphTwo: {
     emptyData: 'adi.mixLayer.paragraph'
   },
-  button2: {
+  buttonTwo: {
     emptyName: 'adi.mixLayer.button',
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
@@ -693,7 +693,7 @@ export default [
     data: {
       colMedia: { 'z-index': 1 },
       media: { height: '790px' },
-      media2: { height: '790px' },
+      mediaTwo: { height: '790px' },
       colGroupAA: {
         'z-index': 2,
         'margin-top': '-600px',
@@ -718,11 +718,11 @@ export default [
         border: '1px solid #3ba4ff',
         'border-radius': '4px'
       },
-      subtitle2: {
+      subtitleTwo: {
         'margin-top': '10px',
         'margin-bottom': '45px'
       },
-      button2: {
+      buttonTwo: {
         width: '110px',
         'margin-top': '10px',
         border: '1px solid #3ba4ff',
@@ -733,7 +733,7 @@ export default [
         media: {
           height: '344px'
         },
-        media2: {
+        mediaTwo: {
           height: '344px'
         },
         colGroupAA: {
@@ -788,17 +788,17 @@ export default [
       subtitle: ['font_3', 'color_0'],
       paragraph: ['font_9', 'color_0'],
       button: ['font_10', 'color_7'],
-      title2: ['font_1', 'color_0'],
-      subtitle2: ['font_3', 'color_0'],
-      paragraph2: ['font_9', 'color_0'],
-      button2: ['font_10', 'color_7']
+      titleTwo: ['font_1', 'color_0'],
+      subtitleTwo: ['font_3', 'color_0'],
+      paragraphTwo: ['font_9', 'color_0'],
+      buttonTwo: ['font_10', 'color_7']
     },
     options: {
       theme: {
         button: {
           bgColor: 'color_0'
         },
-        button2: {
+        buttonTwo: {
           bgColor: 'color_0'
         }
       },
@@ -807,7 +807,7 @@ export default [
     cover: require('@/../static/adi/mixLayer/horizontalTwo.png'),
     preview: {
       outter: {
-        height: '240px'
+        height: '180px'
       },
       inner: {
         'margin-top': '-20px'
@@ -821,7 +821,7 @@ export default [
     data: {
       colMedia: { 'z-index': 1 },
       media: { height: '460px' },
-      media2: { height: '460px' },
+      mediaTwo: { height: '460px' },
       colGroupAA: {
         'z-index': 2,
         'margin-top': '-360px'
@@ -844,11 +844,11 @@ export default [
         border: '1px solid #3ba4ff',
         'border-radius': '4px'
       },
-      subtitle2: {
+      subtitleTwo: {
         'margin-top': '10px',
         'margin-bottom': '45px'
       },
-      button2: {
+      buttonTwo: {
         width: '110px',
         'margin-top': '10px',
         border: '1px solid #3ba4ff',
@@ -859,7 +859,7 @@ export default [
         media: {
           height: '344px'
         },
-        media2: {
+        mediaTwo: {
           height: '344px'
         },
         colGroupAA: {
@@ -900,17 +900,17 @@ export default [
       subtitle: ['font_3', 'color_0'],
       paragraph: ['font_9', 'color_0'],
       button: ['font_10', 'color_7'],
-      title2: ['font_1', 'color_0'],
-      subtitle2: ['font_3', 'color_0'],
-      paragraph2: ['font_9', 'color_0'],
-      button2: ['font_10', 'color_7']
+      titleTwo: ['font_1', 'color_0'],
+      subtitleTwo: ['font_3', 'color_0'],
+      paragraphTwo: ['font_9', 'color_0'],
+      buttonTwo: ['font_10', 'color_7']
     },
     options: {
       theme: {
         button: {
           bgColor: 'color_0'
         },
-        button2: {
+        buttonTwo: {
           bgColor: 'color_0'
         }
       },
