@@ -14,18 +14,18 @@
     "code": "Code",
     "splitScreen": "Split",
 
-    "system":"System",
-    "page":"Page",
-    "edit":"Edit",
-    "insert":"Insert",
-    "help":"Help",
-    "backHomePage":"BackHomePage",
-    "newWebsite":"NewWebsite",
-    "siteSettings":"SiteSettings",
-    "dataSource":"DataSource",
-    "revoke":"Revoke",
-    "redo":"Redo",
-    "module":"Module",
+    "system": "System",
+    "page": "Page",
+    "edit": "Edit",
+    "insert": "Insert",
+    "help": "Help",
+    "backHomePage": "BackHomePage",
+    "newWebsite": "NewWebsite",
+    "siteSettings": "SiteSettings",
+    "dataSource": "DataSource",
+    "revoke": "Revoke",
+    "redo": "Redo",
+    "module": "Module",
 
     "refresh": "Refresh",
     "close": "Close",
@@ -127,7 +127,8 @@
       "title": "University of California",
       "subtitle": "Top Research University",
       "paragraph":
-        "The University of California, Berkeley is one of the most prestigious and top public research universities in the United States, located on the hills of the East Bay Berkeley, San Francisco. Founded in 1868 by the California College and the College of Agriculture, Mining, and Mechanics, it was relocated to Berkeley, near San Francisco, in 1873. Berkeley was the oldest one at the University of California. It is also a founding member of the Association of American Universities. Its mascots have changed from the emblem of California, so their students often call themselves \"Golden Bears.\" The University of California, Berkeley, along with Stanford University and the Massachusetts Institute of Technology, are honored as the academic leaders of engineering science and technology in the United States."
+        "The University of California, Berkeley is one of the most prestigious and top public research universities in the United States, located on the hills of the East Bay Berkeley, San Francisco. Founded in 1868 by the California College and the College of Agriculture, Mining, and Mechanics, it was relocated to Berkeley, near San Francisco, in 1873. Berkeley was the oldest one at the University of California. It is also a founding member of the Association of American Universities. Its mascots have changed from the emblem of California, so their students often call themselves \"Golden Bears.\" The University of California, Berkeley, along with Stanford University and the Massachusetts Institute of Technology, are honored as the academic leaders of engineering science and technology in the United States.",
+      "button": "MORE"
     },
     "mixPosition": {
       "title": "One person, one road, people on the way",
