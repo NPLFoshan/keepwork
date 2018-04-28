@@ -81,13 +81,13 @@ export default [
         },
         {
           colGroupB: [
-            { colMedia: 'media2' },
+            { colMedia: 'mediaTwo' },
             {
               colGroupBA: [
-                { colTitle: 'title2' },
-                { colSubtitle: 'subtitle2' },
-                { colParagraph: 'paragraph2' },
-                { colButton: 'button2' }
+                { colTitle: 'titleTwo' },
+                { colSubtitle: 'subtitleTwo' },
+                { colParagraph: 'paragraphTwo' },
+                { colButton: 'buttonTwo' }
               ]
             }
           ]

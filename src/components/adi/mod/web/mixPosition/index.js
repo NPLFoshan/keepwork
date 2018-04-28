@@ -11,11 +11,11 @@ const components = {
   subtitle: 'AdiTitle',
   paragraph: 'AdiMarkdown',
   button: 'AdiButton',
-  media2: 'AdiMedia',
-  title2: 'AdiTitle',
-  subtitle2: 'AdiTitle',
-  paragraph2: 'AdiMarkdown',
-  button2: 'AdiButton'
+  mediaTwo: 'AdiMedia',
+  titleTwo: 'AdiTitle',
+  subtitleTwo: 'AdiTitle',
+  paragraphTwo: 'AdiMarkdown',
+  buttonTwo: 'AdiButton'
 }
 
 const properties = generateProperties(name, components)

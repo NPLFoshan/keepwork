@@ -22,25 +22,25 @@ let emptyData = {
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
   },
-  media2: {
+  mediaTwo: {
     emptySrc: require('@/../static/adi/mixPosition/picture-mod.png'),
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
   },
-  title2: {
+  titleTwo: {
     emptyName: 'adi.mixPosition.title',
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
   },
-  subtitle2: {
+  subtitleTwo: {
     emptyName: 'adi.mixPosition.subtitle',
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
   },
-  paragraph2: {
+  paragraphTwo: {
     emptyData: 'adi.mixPosition.paragraph'
   },
-  button2: {
+  buttonTwo: {
     emptyName: 'adi.mixPosition.button',
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
@@ -462,14 +462,14 @@ export default [
       media: {
         height: '280px'
       },
-      media2: {
+      mediaTwo: {
         height: '280px'
       },
       '@media only screen and (max-width: 767px)': {
         media: {
           height: '280px'
         },
-        media2: {
+        mediaTwo: {
           height: '280px'
         }
       },
@@ -492,15 +492,15 @@ export default [
         border: '1px solid #3ba4ff',
         'border-radius': '4px'
       },
-      subtitle2: {
+      subtitleTwo: {
         'margin-top': '10px'
       },
-      paragraph2: {
+      paragraphTwo: {
         'margin-top': '15px',
         'text-indent': '28px',
         'white-space': 'pre-wrap'
       },
-      button2: {
+      buttonTwo: {
         'margin-top': '10px',
         border: '1px solid #3ba4ff',
         'border-radius': '4px'
@@ -543,17 +543,17 @@ export default [
       subtitle: ['font_3', 'color_2'],
       paragraph: ['font_9', 'color_4'],
       button: ['font_10', 'color_7'],
-      title2: ['font_1', 'color_7'],
-      subtitle2: ['font_3', 'color_2'],
-      paragraph2: ['font_9', 'color_4'],
-      button2: ['font_10', 'color_7']
+      titleTwo: ['font_1', 'color_7'],
+      subtitleTwo: ['font_3', 'color_2'],
+      paragraphTwo: ['font_9', 'color_4'],
+      buttonTwo: ['font_10', 'color_7']
     },
     options: {
       theme: {
         button: {
           bgColor: 'color_0'
         },
-        button2: {
+        buttonTwo: {
           bgColor: 'color_0'
         }
       },
@@ -564,7 +564,7 @@ export default [
     cover: require('@/../static/adi/mixPosition/cover/verticalTwo.png'),
     preview: {
       outter: {
-        height: '360px'
+        height: '205px'
       },
       inner: {
         'margin-top': '-20px'
@@ -579,14 +579,14 @@ export default [
       media: {
         height: '340px'
       },
-      media2: {
+      mediaTwo: {
         height: '340px'
       },
       '@media only screen and (max-width: 767px)': {
         media: {
           height: '170px'
         },
-        media2: {
+        mediaTwo: {
           height: '170px'
         }
       },
@@ -611,18 +611,18 @@ export default [
         border: '1px solid #3ba4ff',
         'border-radius': '4px'
       },
-      title2: {
+      titleTwo: {
         'margin-top': '20px'
       },
-      subtitle2: {
+      subtitleTwo: {
         'margin-top': '10px'
       },
-      paragraph2: {
+      paragraphTwo: {
         'margin-top': '15px',
         'text-indent': '28px',
         'white-space': 'pre-wrap'
       },
-      button2: {
+      buttonTwo: {
         border: '1px solid #3ba4ff',
         'border-radius': '4px'
       }
@@ -649,17 +649,17 @@ export default [
       subtitle: ['font_3', 'color_2'],
       paragraph: ['font_9', 'color_4'],
       button: ['font_10', 'color_7'],
-      title2: ['font_1', 'color_7'],
-      subtitle2: ['font_3', 'color_2'],
-      paragraph2: ['font_9', 'color_4'],
-      button2: ['font_10', 'color_7']
+      titleTwo: ['font_1', 'color_7'],
+      subtitleTwo: ['font_3', 'color_2'],
+      paragraphTwo: ['font_9', 'color_4'],
+      buttonTwo: ['font_10', 'color_7']
     },
     options: {
       theme: {
         button: {
           bgColor: 'color_0'
         },
-        button2: {
+        buttonTwo: {
           bgColor: 'color_0'
         }
       },
@@ -670,7 +670,7 @@ export default [
     cover: require('@/../static/adi/mixPosition/cover/horizontalTwo.png'),
     preview: {
       outter: {
-        height: '360px'
+        height: '220px'
       },
       inner: {
         'margin-top': '-20px'
