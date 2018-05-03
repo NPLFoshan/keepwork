@@ -9,6 +9,7 @@ import ModParacraft from './web/paracraft'
 import ModQQ from './web/qq'
 import ModText from './web/text'
 import ModBoard from './web/board'
+import ModTextBoard from './web/textBoard'
 import ModVipRead from './web/vipRead'
 import ModComment from './web/comment'
 
@@ -23,6 +24,7 @@ export const modList = {
   ModQQ,
   ModText,
   ModBoard,
+  ModTextBoard,
   ModVipRead,
   ModComment,
   ModMenu

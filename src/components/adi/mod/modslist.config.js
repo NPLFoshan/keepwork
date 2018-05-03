@@ -1,6 +1,7 @@
 import ModMarkdown from './common/markdown'
 import ModTitle from './web/title'
 import ModBoard from './web/board'
+import ModTextBoard from './web/textBoard'
 import ModText from './web/text'
 import ModQQ from './web/qq'
 import ModMixLayer from './web/mixLayer'
@@ -56,6 +57,11 @@ var modsList = [
         id: '1-8',
         label: 'modList.carousel',
         mods: [ModImgLoop]
+      },
+      {
+        id: '1-9',
+        label: 'modList.textBoard',
+        mods: [ModTextBoard]
       }
     ]
   },
