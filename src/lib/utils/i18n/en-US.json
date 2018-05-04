@@ -14,18 +14,18 @@
     "code": "Code",
     "splitScreen": "Split",
 
-    "system":"System",
-    "page":"Page",
-    "edit":"Edit",
-    "insert":"Insert",
-    "help":"Help",
-    "backHomePage":"BackHomePage",
-    "newWebsite":"NewWebsite",
-    "siteSettings":"SiteSettings",
-    "dataSource":"DataSource",
-    "revoke":"Revoke",
-    "redo":"Redo",
-    "module":"Module",
+    "system": "System",
+    "page": "Page",
+    "edit": "Edit",
+    "insert": "Insert",
+    "help": "Help",
+    "backHomePage": "BackHomePage",
+    "newWebsite": "NewWebsite",
+    "siteSettings": "SiteSettings",
+    "dataSource": "DataSource",
+    "revoke": "Revoke",
+    "redo": "Redo",
+    "module": "Module",
 
     "refresh": "Refresh",
     "close": "Close",
@@ -104,7 +104,8 @@
     "board": "Board",
     "vipRead": "VIP Read",
     "comment": "Comment",
-    "setting": "Setting"
+    "setting": "Setting",
+    "textBoard": "Text Board"
   },
   "adi": {
     "markdown": {
