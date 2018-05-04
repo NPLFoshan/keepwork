@@ -588,6 +588,9 @@ export default [
         },
         mediaTwo: {
           height: '170px'
+        },
+        colGroupB: {
+          'margin-top': '20px'
         }
       },
       colGroupAA: {
@@ -630,8 +633,14 @@ export default [
     props: {
       colGroupRow: { gutter: 20 },
       colGroup: { span: 24 },
-      colGroupA: { span: 12 },
-      colGroupB: { span: 12 },
+      colGroupA: {
+        xs: { span: 24 },
+        sm: { span: 12 }
+      },
+      colGroupB: {
+        xs: { span: 24 },
+        sm: { span: 12 }
+      },
       colButton: {
         xs: {
           span: 6,
