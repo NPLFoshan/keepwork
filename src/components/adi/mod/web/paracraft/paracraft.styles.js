@@ -11,6 +11,31 @@ let emptyData = {
     emptyLink: 'http://keepwork.com',
     emptyTarget: '_blank'
   },
+  titleA: {
+    emptyName: 'adi.paracraft.worldName',
+    emptyLink: 'http://keepwork.com',
+    emptyTarget: '_blank'
+  },
+  titleB: {
+    emptyName: 'adi.paracraft.worldName',
+    emptyLink: 'http://keepwork.com',
+    emptyTarget: '_blank'
+  },
+  titleC: {
+    emptyName: 'adi.paracraft.worldName',
+    emptyLink: 'http://keepwork.com',
+    emptyTarget: '_blank'
+  },
+  titleD: {
+    emptyName: 'adi.paracraft.worldName',
+    emptyLink: 'http://keepwork.com',
+    emptyTarget: '_blank'
+  },
+  subtitleA: {
+    emptyName: 'adi.paracraft.worldName',
+    emptyLink: 'http://keepwork.com',
+    emptyTarget: '_blank'
+  },
   author: {
     emptyDesc: 'adi.paracraft.author.desc',
     emptyText: 'adi.paracraft.author.text',
@@ -56,6 +81,15 @@ let emptyData = {
     emptyTarget: '_blank'
   },
   desc: {
+    emptyData: 'adi.paracraft.desc.data'
+  },
+  descB: {
+    emptyData: 'adi.paracraft.desc.data'
+  },
+  descC: {
+    emptyData: 'adi.paracraft.desc.data'
+  },
+  descD: {
     emptyData: 'adi.paracraft.desc.data'
   }
 }
@@ -422,6 +456,140 @@ export default [
     preview: {
       outter: {
         height: '79px'
+      },
+      inner: {
+        'margin-top': '-20px'
+      }
+    }
+  },
+  {
+    templateID: 3,
+    data: {
+      preview: {
+        height: '314px'
+      },
+      colTitle: {
+        width: 'auto'
+      },
+      '@media only screen and (max-width: 767px)': {
+        colGroupBA: {
+          'margin-top': '10px'
+        },
+        colAuthor: {
+          'margin-top': '10px'
+        },
+        colDesc: {
+          'margin-top': '10px'
+        },
+        colGroupAA: {
+          'margin-top': '10px'
+        }
+      },
+      '@media only screen and (min-width: 768px)': {
+        colGroupA: {
+          'margin-top': '10px',
+          'margin-bottom': '10px'
+        },
+        colSubtitle: {
+          'margin-top': '20px'
+        },
+        colGroupAA: {
+          'margin-top': '40px'
+        },
+        colGroupBA: {
+          'padding-left': '30px'
+        },
+        colGroupC: {
+          'margin-top': '40px',
+          width: '150px',
+          position: 'relative',
+          'margin-left': '50%',
+          left: '-75px'
+        },
+        colGroupD: {
+          'margin-top': '10px'
+        },
+        colTitleDA: {
+          'margin-top': '10px',
+          'text-align': 'center'
+        },
+        colParagraphDB: {
+          'margin-top': '10px'
+        },
+        colGroupE: {
+          'margin-top': '30px'
+        },
+        colVersion: {
+          'margin-top': '10px'
+        },
+        colSize: {
+          'margin-top': '10px'
+        },
+        colAuthor: {
+          'margin-top': '10px'
+        }
+      }
+    },
+    props: {
+      colGroupRow: {
+        gutter: 30
+      },
+      colPreview: {
+        sm: {
+          span: 9
+        },
+        xs: {
+          span: 24
+        }
+      },
+      colGroupBA: {
+        sm: {
+          span: 15
+        }
+      },
+      colSubtitle: {
+        sm: {
+          span: 9
+        }
+      }
+    },
+    theme: {
+      root: ['font_6', 'mod-space'],
+      rootRow: ['mod-full-width'],
+      worldName: ['font_4', 'color_4'],
+      author: ['font_4', 'color_4'],
+      version: ['font_4', 'color_4'],
+      size: ['font_4', 'color_4'],
+      download: ['font_20', 'color_0'],
+      titleA: [ 'font_1' ],
+      subtitleA: [ 'font_20', 'color_3' ]
+    },
+    options: {
+      theme: {
+        download: {
+          buttonStyle: {
+            'background-color': 'color_7'
+          }
+        },
+        enter: {
+          buttonStyle: {
+            'background-color': 'color_8'
+          }
+        }
+      },
+      config: {
+        ...emptyData,
+        innerModal: {
+          width: '70%',
+          height: '80%',
+          'background-color': 'white'
+        }
+      }
+    },
+    cover: require('@/../static/adi/paracraft/paracraft1.png'),
+    preview: {
+      outter: {
+        height: '48px'
       },
       inner: {
         'margin-top': '-20px'

@@ -81,5 +81,43 @@ export default [
     {
       colInnerModal: 'innerModal'
     }
+  ],
+  // template 3
+  [
+    {
+      colGroup: [
+        { colTitle: 'titleA' },
+        { colSubtitle: 'subtitleA' },
+        { colGroupA: [{ colUpdateTime: 'updateTime' }] },
+        { colGroupB: [
+          {
+            colPreview: 'preview',
+            colGroupBA: [
+              { colWorldName: 'worldName' },
+              { colAuthor: 'author' },
+              { colVersion: 'version' },
+              { colSize: 'size' }
+            ]
+          }
+        ]
+        },
+        { colGroupC: [ { colDownload: 'download' } ] },
+        {
+          colGroupD: [
+            { colTitleDA: 'titleB' },
+            { colParagraphDB: 'descB' },
+            { colTitleDA: 'titleC' },
+            { colParagraphDB: 'descC' },
+            { colTitleDA: 'titleD' },
+            { colParagraphDB: 'descD' }
+          ]
+        },
+        {
+          colGroupE: [
+            { colComment: 'comment' }
+          ]
+        }
+      ]
+    }
   ]
 ]

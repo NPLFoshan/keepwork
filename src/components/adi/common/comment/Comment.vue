@@ -2,6 +2,10 @@
   <div class='comp-comment' v-loading='loading'>
     <div v-if="properties.switch.value">
       <h3>{{$t(options.title)}}</h3>
+      <div class="comment-input">
+        <textarea rows="3" v-model="content" :placeholder="$t(options.notice)"></textarea>
+        <el-button @click="commit">{{$t(options.commit)}}</el-button>
+      </div>
       <div class="comments-box">
         <div class="comment-item clearfix" v-for='comment in activePageCommentList' :key='comment._id'>
           <img :src="comment.userInfo.portrait">
@@ -13,10 +17,7 @@
           <a class="delete-btn" @click="deleteComment(comment._id)">{{$t(options.delete)}}</a>
         </div>
       </div>
-      <div class="comment-input">
-        <textarea rows="3" v-model="content" :placeholder="$t(options.notice)"></textarea>
-        <el-button @click="commit">{{$t(options.commit)}}</el-button>
-      </div>
+      
     </div>
     <div class="text-center shutup-comment" v-if="!properties.switch.value">
       {{$t(options.close)}}
