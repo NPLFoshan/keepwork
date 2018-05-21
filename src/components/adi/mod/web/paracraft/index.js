@@ -27,7 +27,8 @@ const components = {
   descC: 'AdiMarkdown',
   titleD: 'AdiTitle',
   descD: 'AdiMarkdown',
-  comment: 'AdiComment'
+  comment: 'AdiComment',
+  backgroundImage: 'AdiMedia'
 }
 
 const properties = generateProperties(name, components)

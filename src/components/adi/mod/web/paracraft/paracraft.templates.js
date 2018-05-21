@@ -86,22 +86,30 @@ export default [
   [
     {
       colGroup: [
-        { colTitle: 'titleA' },
-        { colSubtitle: 'subtitleA' },
-        { colGroupA: [{ colUpdateTime: 'updateTime' }] },
-        { colGroupB: [
-          {
-            colPreview: 'preview',
-            colGroupBA: [
-              { colWorldName: 'worldName' },
-              { colAuthor: 'author' },
-              { colVersion: 'version' },
-              { colSize: 'size' }
-            ]
-          }
+        { colBackgroundImage: 'backgroundImage' },
+        { colParacraft: [
+          { colTitle: 'titleA' },
+          { colSubtitle: 'subtitleA' },
+          { colGroupA: [{ colUpdateTime: 'updateTime' }] },
+          { colGroupB: [
+            {
+              colPreview: 'preview',
+              colGroupBA: [
+                { colWorldName: 'worldName' },
+                { colAuthor: 'author' },
+                { colVersion: 'version' },
+                { colSize: 'size' },
+                { colGroupCA: [
+                  { colViewTimesImg: 'viewTimesImg' },
+                  { colViewTimes: 'viewTimes' }
+                ]}
+              ]
+            }
+          ]
+          },
+          { colDownload: 'download' }
         ]
         },
-        { colGroupC: [ { colDownload: 'download' } ] },
         {
           colGroupD: [
             { colTitleDA: 'titleB' },
