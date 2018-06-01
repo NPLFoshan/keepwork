@@ -12,6 +12,7 @@ import ModVipRead from './web/vipRead'
 import ModComment from './web/comment'
 import ModMenu from './web/menu'
 import ModTextBoard from './web/textBoard'
+import ModTab from './web/tab'
 // import ModPageList from './web/pageList'
 // import ModToc from './web/toc'
 
@@ -29,6 +30,11 @@ var modsList = [
         id: '1-2',
         label: 'modList.board',
         mods: [ModBoard]
+      },
+      {
+        id: '1-3',
+        label: 'Tab',
+        mods: [ModTab]
       }
     ]
   },
