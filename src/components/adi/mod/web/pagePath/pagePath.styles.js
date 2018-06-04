@@ -20,10 +20,10 @@ export default [
       theme: {
         pageRoute: {
           nameFontSize: 'font_2',
-          nameFontColor: 'color_14',
+          nameFontColor: 'color_6',
           labelFontColor: 'color_3',
           commonSize: 'font_4',
-          pageFontColor: 'color_24'
+          pageFontColor: 'color_9'
         }
       },
       config: {

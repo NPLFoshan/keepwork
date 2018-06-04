@@ -17,7 +17,7 @@ import AdiFooter from './footer/footer.properties'
 import AdiToc from './toc/toc.properties'
 import AdiBigFile from './bigFile/bigFile.properties'
 import AdiBreadCrumb from './breadCrumb/breadCrumb.properties'
-import AdiBreadCrumbPage from './breadCrumbPage/breadCrumbPage.properties'
+import AdiPagePath from './pagePath/pagePath.properties'
 
 export default {
   AdiMarkdown,
@@ -39,5 +39,5 @@ export default {
   AdiToc,
   AdiBigFile,
   AdiBreadCrumb,
-  AdiBreadCrumbPage
+  AdiPagePath
 }

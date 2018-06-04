@@ -23,7 +23,7 @@ import templates from './pagePath.templates'
 const name = 'ModPagePath'
 
 const components = {
-  pageRoute: 'AdiBreadCrumbPage'
+  pageRoute: 'AdiPagePath'
 }
 
 const properties = generateProperties(name, components)
