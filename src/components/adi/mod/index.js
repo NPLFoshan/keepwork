@@ -17,6 +17,7 @@ import ModPageList from './web/pageList'
 import ModToc from './web/toc'
 import ModBigFile from './web/bigFile'
 import ModPagePath from './web/pagePath'
+import ModTab from './web/tab'
 
 export const modList = {
   ModMarkdown,
@@ -37,7 +38,8 @@ export const modList = {
   ModPageList,
   ModToc,
   ModBigFile,
-  ModPagePath
+  ModPagePath,
+  ModTab
 }
 
 export const load = modName => {

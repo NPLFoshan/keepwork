@@ -18,6 +18,7 @@ import AdiToc from './toc/toc.proptypes'
 import AdiBigFile from './bigFile/bigFile.proptypes'
 import AdiBreadCrumb from './breadCrumb/breadCrumb.proptypes'
 import AdiPagePath from './pagePath/pagePath.proptypes'
+import AdiTab from './tab/tab.proptypes'
 
 export default {
   AdiMarkdown,
@@ -39,5 +40,6 @@ export default {
   AdiToc,
   AdiBigFile,
   AdiBreadCrumb,
-  AdiPagePath
+  AdiPagePath,
+  AdiTab
 }
