@@ -1,34 +1,44 @@
+<template>
+  <div class="comp-breadcrumb">
+    <el-breadcrumb :style="getStyle" separator="/">
+      <el-breadcrumb-item v-for="(menuData, index) in data" :key="index">
+        <a
+          :target="getTarget"
+          :href="menuData.link"
+          @mouseenter="mouseenter"
+          @mouseleave="mouseleave"
+        >
+          {{isEmptyData ? $t(menuData.name) : menuData.name}}
+        </a>
+      </el-breadcrumb-item>
+    </el-breadcrumb>
+  </div>
+</template>
+
+
 <script>
 import compBaseMixin from '../comp.base.mixin'
 import _ from 'lodash'
 
-const renderTemplate = (h, m, data) => {
-  data = data || m.data
-
-  return _.map(data, menuData => {
-    return (
-      <el-breadcrumb-item>
-        <a target={m.getTarget} href={menuData.link}>
-          {m.isEmptyData ? m.$t(menuData.name) : menuData.name}
-        </a>
-      </el-breadcrumb-item>
-    )
-  })
-}
-
 export default {
   name: 'AdiBreadCrumb',
-  render(h) {
-    return (
-      <div class="comp-breadCrumb">
-        <el-breadcrumb style={this.getStyle} separator="/">
-          {renderTemplate(h, this)}
-        </el-breadcrumb>
-      </div>
-    )
-  },
   mixins: [compBaseMixin],
-  methods: {},
+  methods: {
+    mouseenter(event) {
+      let element = event.path[0]
+
+      element.style.color = this.options.color
+      element.style.backgroundColor = this.options.backgroundColor
+      element.style.borderBottomColor = this.options.borderBottomColor
+    },
+    mouseleave(event) {
+      let element = event.path[0]
+
+      element.style.color = null
+      element.style.backgroundColor = null
+      element.style.borderBottomColor = null
+    }
+  },
   computed: {
     data() {
       return this.properties.data
@@ -52,7 +62,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.comp-breadCrumb {
+.comp-breadcrumb {
   .el-breadcrumb {
     .el-breadcrumb__item {
       height: 64px;
@@ -71,15 +81,14 @@ export default {
     font-weight: normal;
   }
   a:hover {
-    color: #ff2121;
-    background-color: #ffefef;
-    border-bottom: #ff2121 4px solid;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
   }
 }
 </style>
 
 <style lang="scss">
-.comp-breadCrumb {
+.comp-breadcrumb {
   .el-breadcrumb__inner,
   .el-breadcrumb__separator {
     height: 100%;
