@@ -349,7 +349,7 @@ export default [
       }
     },
     theme: {
-      root: [],
+      root: ['mod-space'],
       rootRow: ['mod-full-width']
     },
     options: {
