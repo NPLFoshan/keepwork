@@ -4,8 +4,23 @@ export default [
     data: {},
     props: {},
     theme: {
-      rootRow: ['mod-full-width']
+      root: ['mod-space', 'mod-full-width']
     },
     options: {}
+  },
+  {
+    data: {},
+    props: {},
+    theme: {
+      root: ['mod-space', 'mod-full-width']
+    },
+    options: {
+      theme: {},
+      config: {
+        categoryList: {
+          styleId: 1
+        }
+      }
+    }
   }
 ]
