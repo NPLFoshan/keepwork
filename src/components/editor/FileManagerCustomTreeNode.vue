@@ -435,8 +435,6 @@ export default {
 
 .rename-wrapper {
   display: flex;
-  .rename-input {
-  }
   .rename-btn {
     width: 20px;
     margin: 0 10px;
