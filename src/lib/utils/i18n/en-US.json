@@ -205,11 +205,11 @@
     "text": "Text",
     "navigation": "Navigation",
     "menu": "Menu",
-    "headNavigation": "Head navigation",
+    "title": "Head navigation",
 
     "graphic": "Graphic",
-    "carousel": "Carousel",
-    "widescreenImage": "Widescreen image",
+    "imgLoop": "Image loop",
+    "img": "Wide screen image",
     "board": "Board",
 
     "mixLayer": "Mix layer",
