@@ -1,7 +1,7 @@
 let emptyData = {
   img: {
     emptySrc: require('@/../static/adi/img/imgTwo.png'),
-    emptyLink: 'http://keepwork.com',
+    emptyLink: '#',
     emptyTarget: '_blank'
   }
 }
