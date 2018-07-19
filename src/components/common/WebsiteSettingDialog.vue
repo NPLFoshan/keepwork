@@ -37,13 +37,13 @@ export default {
         {
           text: this.$t('setting.siteLayouts'),
           comp: WebsiteSettingLayout
+        },
+        {
+          text: '网站样式',
+          comp: WebsiteSettingStyle
         }
-        // {
-        //   text: '网站样式',
-        //   comp: WebsiteSettingStyle
-        // }
       ],
-      activeSettingIndex: 0
+      activeSettingIndex: 2
     }
   },
   computed: {

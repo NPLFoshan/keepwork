@@ -8,6 +8,7 @@ import {
   CONFIG_FOLDER_NAME
 } from '@/lib/utils/gitlab'
 import LayoutHelper from '@/lib/mod/layout'
+import ThemeHelper from '@/lib/theme'
 
 const getters = {
   info: state => state.info,
@@ -236,7 +237,7 @@ const getters = {
 
   activePageStarInfo: state => state.activePageStarInfo,
   siteThemeConfigs: state => state.siteThemeConfigs,
-  siteThemeConfigBySitePath: (state, { siteThemeConfigs }) => sitePath => siteThemeConfigs[sitePath] || {},
+  siteThemeConfigBySitePath: (state, { siteThemeConfigs }) => sitePath => siteThemeConfigs[sitePath] || ThemeHelper.defaultTheme,
   siteLayoutConfigs: state => state.siteLayoutConfigs,
   siteLayoutConfigBySitePath: (state, { siteLayoutConfigs }) => sitePath => siteLayoutConfigs[sitePath] || {},
   siteLayoutsBySitePath: (state, { siteLayoutConfigBySitePath }) => sitePath => {
