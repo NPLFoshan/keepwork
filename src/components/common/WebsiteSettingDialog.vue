@@ -39,7 +39,7 @@ export default {
           comp: WebsiteSettingLayout
         },
         {
-          text: '网站样式',
+          text: this.$t('setting.siteStyle'),
           comp: WebsiteSettingStyle
         }
       ],
