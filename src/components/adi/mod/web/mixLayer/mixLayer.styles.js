@@ -91,10 +91,10 @@ export default [
       root: ['mod-space'],
       media: ['mod-full-width'],
       colGroup: ['mod-full-width'],
-      title: ['font_1', 'color_1'],
-      subtitle: ['font_3', 'color_1'],
+      title: ['font_1', 'fontsColor'],
+      subtitle: ['font_3', 'fontsColor'],
       colCoupleRow: ['mod-full-width'],
-      paragraph: ['font_9', 'color_1']
+      paragraph: ['font_9', 'fontsColor']
     },
     options: {
       config: { ...emptyData }
@@ -182,10 +182,10 @@ export default [
       root: ['mod-space'],
       media: ['mod-full-width'],
       colGroup: ['mod-full-width'],
-      title: ['font_1', 'color_1'],
-      subtitle: ['font_3', 'color_1'],
+      title: ['font_1', 'fontsColor'],
+      subtitle: ['font_3', 'fontsColor'],
       colCoupleRow: ['mod-full-width'],
-      paragraph: ['font_9', 'color_1']
+      paragraph: ['font_9', 'fontsColor']
     },
     options: {
       config: { ...emptyData }
@@ -273,10 +273,10 @@ export default [
       root: ['mod-space'],
       media: ['mod-full-width'],
       colGroup: ['mod-full-width'],
-      title: ['font_1', 'color_1'],
-      subtitle: ['font_3', 'color_1'],
+      title: ['font_1', 'fontsColor'],
+      subtitle: ['font_3', 'fontsColor'],
       colCoupleRow: ['mod-full-width'],
-      paragraph: ['font_9', 'color_1']
+      paragraph: ['font_9', 'fontsColor']
     },
     options: {
       config: { ...emptyData }
@@ -362,10 +362,10 @@ export default [
       root: ['mod-space'],
       media: ['mod-full-width'],
       colGroup: ['mod-full-width'],
-      title: ['font_1', 'color_1'],
-      subtitle: ['font_3', 'color_1'],
+      title: ['font_1', 'fontsColor'],
+      subtitle: ['font_3', 'fontsColor'],
       colCoupleRow: ['mod-full-width'],
-      paragraph: ['font_9', 'color_1']
+      paragraph: ['font_9', 'fontsColor']
     },
     options: {
       config: { ...emptyData }
@@ -452,10 +452,10 @@ export default [
       root: ['mod-space'],
       media: ['mod-full-width'],
       colGroup: ['mod-full-width'],
-      title: ['font_1', 'color_1'],
-      subtitle: ['font_3', 'color_1'],
+      title: ['font_1', 'fontsColor'],
+      subtitle: ['font_3', 'fontsColor'],
       colCoupleRow: ['mod-full-width'],
-      paragraph: ['font_9', 'color_1']
+      paragraph: ['font_9', 'fontsColor']
     },
     options: {
       config: { ...emptyData }
@@ -542,10 +542,10 @@ export default [
       root: ['mod-space'],
       media: ['mod-full-width'],
       colGroup: ['mod-full-width'],
-      title: ['font_1', 'color_1'],
-      subtitle: ['font_3', 'color_1'],
+      title: ['font_1', 'fontsColor'],
+      subtitle: ['font_3', 'fontsColor'],
       colCoupleRow: ['mod-full-width'],
-      paragraph: ['font_9', 'color_1']
+      paragraph: ['font_9', 'fontsColor']
     },
     options: {
       config: { ...emptyData }
@@ -631,10 +631,10 @@ export default [
       root: ['mod-space'],
       media: ['mod-full-width'],
       colGroup: ['mod-full-width'],
-      title: ['font_1', 'color_1'],
-      subtitle: ['font_3', 'color_1'],
+      title: ['font_1', 'fontsColor'],
+      subtitle: ['font_3', 'fontsColor'],
       colCoupleRow: ['mod-full-width'],
-      paragraph: ['font_9', 'color_1']
+      paragraph: ['font_9', 'fontsColor']
     },
     options: {
       config: { ...emptyData }
@@ -721,10 +721,10 @@ export default [
       root: ['mod-space'],
       media: ['mod-full-width'],
       colGroup: ['mod-full-width'],
-      title: ['font_1', 'color_1'],
-      subtitle: ['font_3', 'color_1'],
+      title: ['font_1', 'fontsColor'],
+      subtitle: ['font_3', 'fontsColor'],
       colCoupleRow: ['mod-full-width'],
-      paragraph: ['font_9', 'color_1']
+      paragraph: ['font_9', 'fontsColor']
     },
     options: {
       config: { ...emptyData }
@@ -811,10 +811,10 @@ export default [
       root: ['mod-space'],
       media: ['mod-full-width'],
       colGroup: ['mod-full-width'],
-      title: ['font_1', 'color_1'],
-      subtitle: ['font_3', 'color_1'],
+      title: ['font_1', 'fontsColor'],
+      subtitle: ['font_3', 'fontsColor'],
       colCoupleRow: ['mod-full-width'],
-      paragraph: ['font_9', 'color_1']
+      paragraph: ['font_9', 'fontsColor']
     },
     options: {
       config: { ...emptyData }
