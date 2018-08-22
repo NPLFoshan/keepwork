@@ -126,14 +126,14 @@ export default {
 
       let all = this.$el.querySelectorAll('[class="style-cover render"]')
 
-      let reset = 0
+      let refactor = 0
       if(window.innerWidth <= 1920){
-        reset = 0.1245
+        refactor = 0.1245
       }else {
-        reset = 0.26
+        refactor = 0.259
       }
       _.forEach(all, (dom, key) => {
-        dom.style.height = dom.offsetHeight * reset + 'px'
+        dom.style.height = dom.offsetHeight * refactor + 'px'
       })
 
       setTimeout(() => {
@@ -148,7 +148,7 @@ export default {
   height: 100%;
 }
 .style-cover {
-  width: 90%;
+  width: 275px;
   cursor: pointer;
   display: block;
   margin: auto;
