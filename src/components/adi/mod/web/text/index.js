@@ -31,21 +31,25 @@ const name = 'ModText'
 const components = {
   title: 'AdiTitle',
   paragraph: 'AdiMarkdown',
+
   titleA: 'AdiTitle',
-  titleB: 'AdiTitle',
-  titleC: 'AdiTitle',
-  titleD: 'AdiTitle',
   subtitleA: 'AdiTitle',
-  subtitleB: 'AdiTitle',
-  subtitleC: 'AdiTitle',
-  subtitleD: 'AdiTitle',
   paragraphA: 'AdiMarkdown',
-  paragraphB: 'AdiMarkdown',
-  paragraphC: 'AdiMarkdown',
-  paragraphD: 'AdiMarkdown',
   buttonA: 'AdiButton',
+
+  titleB: 'AdiTitle',
+  subtitleB: 'AdiTitle',
+  paragraphB: 'AdiMarkdown',
   buttonB: 'AdiButton',
+
+  titleC: 'AdiTitle',
+  subtitleC: 'AdiTitle',
+  paragraphC: 'AdiMarkdown',
   buttonC: 'AdiButton',
+
+  titleD: 'AdiTitle',
+  subtitleD: 'AdiTitle',
+  paragraphD: 'AdiMarkdown',
   buttonD: 'AdiButton'
 }
 

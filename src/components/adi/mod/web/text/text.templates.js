@@ -7,7 +7,7 @@ export default [
   [
     {
       colGroup: [
-        { colGroupA: [{ colTitle: 'titleA' }, { colSubTitle: 'subtitleA' }, { colParagraph: 'paragraphA' }, { colButton: 'buttonA' }] },
+        { colGroupA: [{ colTitle: 'title' }, { colSubTitle: 'subtitle' }, { colParagraph: 'paragraph' }, { colButton: 'button' }] },
         { colGroupB: [{ colTitle: 'titleB' }, { colSubTitle: 'subtitleB' }, { colParagraph: 'paragraphB' }, { colButton: 'buttonB' }] },
         { colGroupC: [{ colTitle: 'titleC' }, { colSubTitle: 'subtitleC' }, { colParagraph: 'paragraphC' }, { colButton: 'buttonC' }] },
         { colGroupD: [{ colTitle: 'titleD' }, { colSubTitle: 'subtitleD' }, { colParagraph: 'paragraphD' }, { colButton: 'buttonD' }] }
@@ -17,7 +17,7 @@ export default [
   [
     {
       colGroup: [
-        { colGroupA: [{ colTitle: 'titleA' }, { colSubTitle: 'subtitleA' }, { colParagraph: 'paragraphA' }, { colButton: 'buttonA' }] },
+        { colGroupA: [{ colTitle: 'title' }, { colSubTitle: 'subtitle' }, { colParagraph: 'paragraph' }, { colButton: 'button' }] },
         { colGroupB: [{ colTitle: 'titleB' }, { colSubTitle: 'subtitleB' }, { colParagraph: 'paragraphB' }, { colButton: 'buttonB' }] }
       ]
     }

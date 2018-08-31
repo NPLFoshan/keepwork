@@ -10,7 +10,27 @@ const components = {
   media: 'AdiMedia',
   title: 'AdiTitle',
   subtitle: 'AdiTitle',
-  paragraph: 'AdiMarkdown'
+  paragraph: 'AdiMarkdown',
+
+  mediaA: 'AdiMedia',
+  titleA: 'AdiTitle',
+  subtitleA: 'AdiTitle',
+  paragraphA: 'AdiMarkdown',
+
+  mediaB: 'AdiMedia',
+  titleB: 'AdiTitle',
+  subtitleB: 'AdiTitle',
+  paragraphB: 'AdiMarkdown',
+
+  mediaC: 'AdiMedia',
+  titleC: 'AdiTitle',
+  subtitleC: 'AdiTitle',
+  paragraphC: 'AdiMarkdown',
+
+  mediaD: 'AdiMedia',
+  titleD: 'AdiTitle',
+  subtitleD: 'AdiTitle',
+  paragraphD: 'AdiMarkdown'
 
 }
 
