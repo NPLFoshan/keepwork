@@ -1024,7 +1024,7 @@ export default [
     theme: {
       root: ['mod-space'],
       // media: ['mod-full-width'],
-      colGroup: ['mod-full-width'],
+      colGroupRow: ['mod-full-width'],
       titleA: ['subtitle', 'fontsColor'],
       titleB: ['subtitle', 'fontsColor'],
       titleC: ['subtitle', 'fontsColor'],
@@ -1141,7 +1141,7 @@ export default [
     theme: {
       root: ['mod-space'],
       // media: ['mod-full-width'],
-      colGroup: ['mod-full-width'],
+      colGroupRow: ['mod-full-width'],
       titleA: ['subtitle', 'fontsColor'],
       titleB: ['subtitle', 'fontsColor'],
       titleC: ['subtitle', 'fontsColor'],

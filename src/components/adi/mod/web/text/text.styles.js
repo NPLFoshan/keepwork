@@ -1,9 +1,4 @@
 let emptyData = {
-  titleA: {
-    emptyName: 'adi.text.titleA',
-    emptyLink: '#',
-    emptyTarget: '_blank'
-  },
   titleB: {
     emptyName: 'adi.text.titleB',
     emptyLink: '#',
@@ -16,11 +11,6 @@ let emptyData = {
   },
   titleD: {
     emptyName: 'adi.text.titleD',
-    emptyLink: '#',
-    emptyTarget: '_blank'
-  },
-  subtitleA: {
-    emptyName: 'adi.text.subtitleA',
     emptyLink: '#',
     emptyTarget: '_blank'
   },
@@ -39,9 +29,6 @@ let emptyData = {
     emptyLink: '#',
     emptyTarget: '_blank'
   },
-  paragraphA: {
-    emptyData: 'adi.text.paragraphA'
-  },
   paragraphB: {
     emptyData: 'adi.text.paragraphB'
   },
@@ -50,11 +37,6 @@ let emptyData = {
   },
   paragraphD: {
     emptyData: 'adi.text.paragraphD'
-  },
-  buttonA: {
-    emptyName: 'adi.text.button',
-    emptyLink: '#',
-    emptyTarget: '_blank'
   },
   buttonB: {
     emptyName: 'adi.text.button',
@@ -76,8 +58,18 @@ let emptyData = {
     emptyLink: '#',
     emptyTarget: '_blank'
   },
+  subtitle: {
+    emptyName: 'adi.text.subtitle',
+    emptyLink: '#',
+    emptyTarget: '_blank'
+  },
   paragraph: {
     emptyData: 'adi.text.paragraph'
+  },
+  button: {
+    emptyName: 'adi.text.button',
+    emptyLink: '#',
+    emptyTarget: '_blank'
   }
 }
 
@@ -169,20 +161,20 @@ export default [
         'justify-content': 'center'
       },
       colGroupA: {
-        width: 'auto'
+        width: '22%'
       },
       colGroupB: {
         width: 'auto',
-        margin: '0 2% 0 2%'
+        margin: '0 3px 0 3px'
       },
       colGroupC: {
-        width: 'auto',
-        margin: '0 2% 0 0'
+        width: '22%',
+        margin: '0 3px 0 0'
       },
       colGroupD: {
         width: 'auto'
       },
-      buttonA: {
+      button: {
         'text-align': 'center'
       },
       buttonB: {

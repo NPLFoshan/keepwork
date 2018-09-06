@@ -30,12 +30,9 @@ const name = 'ModText'
 
 const components = {
   title: 'AdiTitle',
+  subtitle: 'AdiTitle',
   paragraph: 'AdiMarkdown',
-
-  titleA: 'AdiTitle',
-  subtitleA: 'AdiTitle',
-  paragraphA: 'AdiMarkdown',
-  buttonA: 'AdiButton',
+  button: 'AdiButton',
 
   titleB: 'AdiTitle',
   subtitleB: 'AdiTitle',

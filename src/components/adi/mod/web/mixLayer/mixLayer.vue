@@ -36,7 +36,7 @@ export default {
   created() {
     let mixLayerArrColor = { color: this.themeData('phoneFontsColor') }
     let self = this
-    console.log(self.$options)
+    console.log(self)
     function responsiveMode(index) {
       return self.conf.styles[index].data[
         '@media only screen and (max-width: 768px)'
