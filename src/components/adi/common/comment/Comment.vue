@@ -7,7 +7,7 @@
           <textarea rows="3" v-model="content" :placeholder="$t(options.notice)"></textarea>
           <el-button @click="commit">{{$t(options.commit)}}</el-button>
         </div>
-        <div class="comment-box">
+        <div class="comment-box" v-if="getCommentList.length!=0">
           <div class="comment-item" v-for='comment in getCommentList' :key='comment._id'>
             <img :src="comment.userInfo.portrait">
             <div class="text">
@@ -27,20 +27,22 @@
       <div v-if="properties.switch.value">
         <div class="comment-box">
           <div class="comment-input">
-            <textarea rows="3" v-model="content" :placeholder="$t(options.notice)"></textarea>
+            <textarea v-model="content" :placeholder="$t(options.notice)"></textarea>
             <button @click="commit">{{$t(options.commit)}}</button>
           </div>
-          <h3><img :src="getStyleOneId">{{$t(options.title)}}</h3>
-          <hr>
-          <div class="comment-item" v-for='comment in getCommentList' :key='comment._id'>
-            <img :src="comment.userInfo.portrait">
-            <div class="text">
-              <h4>{{ comment.userInfo.displayName }}</h4>
-              <p class="info">{{ getFormatDate(comment.updateTime) }}</p>
-              <p>{{ comment.content }}</p>
-              <hr>
+          <div v-if="getCommentList.length!=0">
+            <h3><img :src="getStyleOneId">{{$t(options.title)}}</h3>
+            <hr>
+            <div class="comment-item" v-for='comment in getCommentList' :key='comment._id'>
+              <img :src="comment.userInfo.portrait">
+              <div class="text">
+                <h4>{{ comment.userInfo.displayName }}</h4>
+                <p class="info">{{ getFormatDate(comment.updateTime) }}</p>
+                <p>{{ comment.content }}</p>
+                <hr>
+              </div>
+              <a class="delete-btn" @click="deleteComment(comment._id)">{{$t(options.delete)}}</a>
             </div>
-            <a class="delete-btn" @click="deleteComment(comment._id)">{{$t(options.delete)}}</a>
           </div>
         </div>
       </div>
@@ -258,6 +260,7 @@ export default {
 
         textarea {
           resize: none;
+          box-sizing: border-box;
           width: 100%;
           height: 50px;
           border: 2px solid #d4d4d4;
@@ -279,7 +282,7 @@ export default {
         }
       }
 
-      & > h3 {
+      h3 {
         font-weight: 900;
         font-size: 22px;
 
@@ -289,7 +292,7 @@ export default {
         }
       }
 
-      & > hr {
+      hr {
         border: 1px solid #dddddd;
       }
 
