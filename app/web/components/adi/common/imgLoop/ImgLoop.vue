@@ -17,6 +17,8 @@
 
 <script>
 import compBaseMixin from '../comp.base.mixin'
+import jss from 'jss'
+import preset from 'jss-preset-default'
 
 export default {
   name: 'AdiImgLoop',
@@ -24,8 +26,12 @@ export default {
   methods: {
     loadImg(item) {
       if (item && item.img) {
+        console.log('-------------')
+        console.log(item)
+        console.log('-------------')
         return this.generateStyleString({
-          'background-image': 'url(' + item.img + ')'
+          'background-image': 'url(' + item.img + ')',
+          'width': item.width
         })
       } else {
         if (this.options.emptyGallery && this.options.emptyGallery.img) {
@@ -44,10 +50,13 @@ export default {
         return [
           {
             img: this.options.emptyGallery.img,
-            link: ''
+            link: '',
+            ratio: '',
+            width: ''
           }
         ]
       } else {
+        console.log(this.properties.data)
         return this.properties.data
       }
     }
@@ -61,6 +70,7 @@ export default {
   height: 100%;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 
   video {
     width: 100%;

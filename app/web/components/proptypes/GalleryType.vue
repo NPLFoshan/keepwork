@@ -1,9 +1,17 @@
 <template>
   <div>
     <div class="gallery-type">
+      <el-input v-model="galleryData.bigWidth" :placeholder="$t('editor.pleaseInput')" class="input-with-select">
+        <el-button v-if="galleryData.bigWidth" slot="prepend" icon="iconfont icon-link_"></el-button>
+        <el-button v-if="!galleryData.bigWidth" slot="prepend">{{$t('common.pictureRatio')}}</el-button>
+        <el-select v-model="galleryData.bigWidth" @change='handleChange' slot="append" placeholder="Select">
+          <el-option v-for="item in ratio" :key="item" :value="item">
+            {{ item }}
+          </el-option>
+        </el-select>
+      </el-input>
       <el-button @click='handleAdd' class="gallery-type-add-btn" icon="el-icon-plus">{{$t('common.add')}}</el-button>
       <div v-for='(item, index) in galleryData' class="gallery-type-item" :key='index' :item="item" @change="handleChange()">
-
         <div v-if="!item.type || item.type === 'images'" class="gallery-type-item-img" :style="getImage(item)">
           <div class="gallery-type-item-img-cover">
             <span>
@@ -38,6 +46,24 @@
             </el-option>
           </el-select>
         </el-input>
+        <el-input v-model="item.ratio" :placeholder="$t('editor.pleaseInput')" class="input-with-select">
+          <el-button v-if="item.ratio" slot="prepend" icon="iconfont icon-link_"></el-button>
+          <el-button v-if="!item.ratio" slot="prepend">{{$t('common.pictureRatio')}}</el-button>
+          <el-select v-model="item.ratio" @change='handleChange' slot="append" placeholder="Select">
+            <el-option v-for="item in ratio" :key="item" :value="item">
+              {{ item }}
+            </el-option>
+          </el-select>
+        </el-input>
+        <el-input v-model="item.width" :placeholder="$t('editor.pleaseInput')" class="input-with-select">
+          <el-button v-if="item.width" slot="prepend" icon="iconfont icon-link_"></el-button>
+          <el-button v-if="!item.width" slot="prepend">{{$t('field.width')}}</el-button>
+          <el-select v-model="item.width" @change='handleChange' slot="append" placeholder="Select">
+            <el-option v-for="item in width" :key="item" :value="item + '%'">
+              {{ item }}%
+            </el-option>
+          </el-select>
+        </el-input>
       </div>
     </div>
     <sky-drive-manager-dialog :mediaLibrary='true' :show='isSkyDriveManagerDialogShow' @close='closeSkyDriveManagerDialog'></sky-drive-manager-dialog>
@@ -59,7 +85,9 @@ export default {
       selectedIndex: 0,
       isSkyDriveManagerDialogShow: false,
       autoplay: false,
-      playloop: false
+      playloop: false,
+      ratio: ["全自动","3:1","2:1","16:9","4:3","1:1","3:4","9:16"],
+      width: [100, 90, 80, 70, 60, 50]
     }
   },
   async mounted() {
@@ -71,6 +99,7 @@ export default {
     }),
     galleryData: {
       get() {
+        console.log(this.originValue)
         if (Array.isArray(this.originValue) && this.originValue.length) {
           return this.originValue
         } else {
@@ -102,7 +131,9 @@ export default {
     handleAdd() {
       this.galleryData.push({
         img: '',
-        link: ''
+        link: '',
+        ratio: '',
+        width: ''
       })
 
       this.handleChange()

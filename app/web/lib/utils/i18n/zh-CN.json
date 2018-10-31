@@ -109,7 +109,9 @@
     "weekday3": "星期三",
     "weekday4": "星期四",
     "weekday5": "星期五",
-    "weekday6": "星期六"
+    "weekday6": "星期六",
+
+    "pictureRatio": "图片比例"
   },
   "editor": {
     "notParacraft": "如果您的设备没有自动使用Paracraft启动3D世界，请安装Paracraft",
