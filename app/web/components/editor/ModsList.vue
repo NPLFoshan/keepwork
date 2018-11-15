@@ -135,13 +135,36 @@ export default {
       let all = this.$el.querySelectorAll('[class="render-mod-container"]')
 
       let refactor = 0
+
+      let heightRefactor = false
+      _.forEach(this.activeModsList, (item, key) => {
+        console.log(item)
+        if(item.styles) {
+          _.forEach(item.styles, (itemA, keyA) => {
+            if(itemA.cover) {
+              _.forEach(all, (dom, key) => {
+                console.log(key)
+                if(window.innerWidth <= 1920){
+                  dom.style.height = itemA.cover.smallHeight
+                  heightRefactor = true
+                }else {
+                  dom.style.height = itemA.cover.bigHeigh
+                  heightRefactor = true
+                }
+              })
+            }
+          })
+        }
+      })
       if(window.innerWidth <= 1920){
         refactor = 0.1245
       }else {
         refactor = 0.254
       }
       _.forEach(all, (dom, key) => {
-        dom.style.height = dom.offsetHeight * refactor + 'px'
+        if(!heightRefactor) {
+          dom.style.height = dom.offsetHeight * refactor + 'px'
+        }
       })
 
       setTimeout(() => {

@@ -84,6 +84,10 @@ export default [
       config: {
         ...emptyData
       }
+    },
+    cover: {
+      smallHeight: '50px',
+      bigHeight: '150px'
     }
   }
 ]
