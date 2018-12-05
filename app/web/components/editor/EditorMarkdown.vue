@@ -1,6 +1,7 @@
 <template>
   <div class='kp-md-editor'>
-    <codemirror ref='mdEditor' :options='options' :value='code' @changes='updateMarkdown' />
+    3213213213515
+    <codemirror :style="test" ref='mdEditor' :options='options' :value='code' @changes='updateMarkdown' />
   </div>
 </template>
 
@@ -47,6 +48,7 @@ export default {
   },
   created() {
     CodeMirror.registerHelper('fold', 'wikiCmdFold', this.wikiCmdFold)
+    console.log(this)
   },
   mounted() {
     this.foldAllCodes(this.editor)
@@ -152,6 +154,17 @@ export default {
         cursorPosition: this.activeCursorLine
       })
     },
+    test(){
+      if(this.$refs['mdEditor']) {
+        console.log(this.$refs['mdEditor'])
+        let b = this.$refs['mdEditor'].$el.children[1]
+        console.log(b)
+        if(b) {
+          b.style.backgroundColor = '#000'
+          b.style.color = '#fff'
+        }
+      }
+    },
     addMod() {
       this.updateActiveCursor()
       this.$store.dispatch('setActiveManagePaneComponent', 'ModsList') // TODO: move wintype defination to gConst
@@ -213,6 +226,7 @@ export default {
       }
     },
     updateMarkdown() {
+      this.test()
       let code = this.editor.getValue()
       let cursor = this.editor.getCursor()
       this.parserCache.code = code

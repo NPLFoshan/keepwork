@@ -153,7 +153,8 @@ export default {
       editingMarkdownModDatas: {
         key: 'data',
         content: ''
-      }
+      },
+      testopen: false
     }
   },
   created() {
@@ -308,10 +309,24 @@ export default {
       this.$store.dispatch('setActiveManagePaneComponent', type)
     },
     toggleFullscreen() {
+      if(!this.testopen){
+        this.testopen = true
+        console.log(this.testopen)
+      }else{
+        this.testopen = false
+        console.log(this.testopen)
+      }
       this.resetShowingCol({
         isCodeShow: true,
         isPreviewShow: !this.isFullscreen
       })
+    },
+    test(){
+      if(this.isCodeShow) {
+        return {
+          'color': 'red'
+        }
+      }
     },
     generateStyleString(style) {
       let string = ''
