@@ -1,7 +1,7 @@
 <template>
   <div class='kp-md-editor'>
-    3213213213515
-    <codemirror :style="test" ref='mdEditor' :options='options' :value='code' @changes='updateMarkdown' />
+    <codemirror ref='mdEditor' :options='options' :value='code' @changes='updateMarkdown' />
+    <!-- <PerfectScrollbar /> -->
   </div>
 </template>
 
@@ -17,6 +17,7 @@ import { codemirror } from 'vue-codemirror'
 import _CodeMirror from 'codemirror'
 import Mousetrap from 'mousetrap'
 import { gConst } from '@/lib/global'
+import PerfectScrollbar from 'perfect-scrollbar'
 
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/mode/markdown/markdown'
@@ -29,8 +30,16 @@ import 'codemirror/addon/fold/xml-fold'
 import 'codemirror/addon/fold/markdown-fold'
 import 'codemirror/addon/lint/json-lint'
 import 'codemirror/addon/selection/active-line.js'
+import 'codemirror/theme/3024-day.css'
+import 'codemirror/theme/vibrant-ink.css'
 
 const CodeMirror = window.CodeMirror || _CodeMirror
+
+// const ps = new PerfectScrollbar('#container', {
+//   wheelSpeed: 2,
+//   wheelPropagation: true,
+//   minScrollbarLength: 20
+// })
 
 export default {
   name: 'EditorMarkdown',
@@ -43,12 +52,17 @@ export default {
       parserCache: {}
     }
   },
+  props: {
+    zenModeOpens: Boolean
+  },
   components: {
-    codemirror
+    codemirror,
+    PerfectScrollbar
   },
   created() {
     CodeMirror.registerHelper('fold', 'wikiCmdFold', this.wikiCmdFold)
-    console.log(this)
+    this.zenModeShow()
+    console.log(this.PerfectScrollbar)
   },
   mounted() {
     this.foldAllCodes(this.editor)
@@ -83,6 +97,13 @@ export default {
       activeMod: 'activeMod',
       cursorPos: 'cursorPos'
     }),
+    zenModeShow(){
+      if(!this.zenModeOpens) {
+        return '3024-day'
+      } else {
+        return 'vibrant-ink'
+      }
+    },
     options() {
       const save = () => Mousetrap.trigger('mod+s')
       const undo = () => Mousetrap.trigger('mod+z')
@@ -100,6 +121,7 @@ export default {
       }
       return {
         mode: 'markdown',
+        theme: this.zenModeShow,
         lineNumbers: true,
         line: true,
         lineWrapping: true,
@@ -153,17 +175,6 @@ export default {
         area: gConst.ADDING_AREA_MARKDOWN,
         cursorPosition: this.activeCursorLine
       })
-    },
-    test(){
-      if(this.$refs['mdEditor']) {
-        console.log(this.$refs['mdEditor'])
-        let b = this.$refs['mdEditor'].$el.children[1]
-        console.log(b)
-        if(b) {
-          b.style.backgroundColor = '#000'
-          b.style.color = '#fff'
-        }
-      }
     },
     addMod() {
       this.updateActiveCursor()
@@ -226,7 +237,7 @@ export default {
       }
     },
     updateMarkdown() {
-      this.test()
+      console.log(this.zenModeOpens)
       let code = this.editor.getValue()
       let cursor = this.editor.getCursor()
       this.parserCache.code = code
@@ -454,8 +465,9 @@ export default {
   overflow: auto;
 }
 .vue-codemirror {
-  background-color: #ffffff;
+  background-color: #000;
   height: 100%;
+  background-image: url('../../assets/img/cubes(1).png')
 }
 </style>
 <style lang="css">
@@ -463,6 +475,11 @@ export default {
   margin: 0 auto;
   height: 100%;
   max-width: 1080px;
+}
+#container {
+  position: relative;
+  width: 600px;
+  height: 400px;
 }
 .kp-md-editor .CodeMirror-gutters {
   background-color: transparent;

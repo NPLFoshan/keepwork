@@ -99,13 +99,13 @@
             </div>
             <el-button-group class="fullScreenBtn">
               <el-tooltip :content="showContent">
-                <el-button :icon="fullscreenIcon" circle @click="toggleFullscreen"></el-button>
+                <el-button :icon="fullscreenIcon" :test="'test'" circle @click="toggleFullscreen"></el-button>
               </el-tooltip>
             </el-button-group>
           </el-col>
         </el-scrollbar>
       </el-row>
-      <editor-markdown ref='codemirror' @insertBigfile='insertBigfile'></editor-markdown>
+      <editor-markdown :zenModeOpens="zenModeOpens" ref='codemirror' @insertBigfile='insertBigfile'></editor-markdown>
     </el-col>
     <el-col v-if="isWelcomeShow" class="guid-col">
       <el-row>
@@ -154,7 +154,7 @@ export default {
         key: 'data',
         content: ''
       },
-      testopen: false
+      zenModeOpens: false
     }
   },
   created() {
@@ -309,24 +309,16 @@ export default {
       this.$store.dispatch('setActiveManagePaneComponent', type)
     },
     toggleFullscreen() {
-      if(!this.testopen){
-        this.testopen = true
-        console.log(this.testopen)
-      }else{
-        this.testopen = false
-        console.log(this.testopen)
+      if(!this.zenModeOpens) {
+        this.zenModeOpens = true
+      } else {
+        this.zenModeOpens = false
       }
+      console.log(this.zenModeOpens)
       this.resetShowingCol({
         isCodeShow: true,
         isPreviewShow: !this.isFullscreen
       })
-    },
-    test(){
-      if(this.isCodeShow) {
-        return {
-          'color': 'red'
-        }
-      }
     },
     generateStyleString(style) {
       let string = ''
