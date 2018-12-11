@@ -51,6 +51,7 @@
     "lodash": "^4.17.5",
     "moment": "^2.17.1",
     "mousetrap": "^1.6.1",
+    "perfect-scrollbar": "^1.4.0",
     "qiniu-js": "^2.2.2",
     "raw-loader": "^0.5.1",
     "scroll-into-view-if-needed": "^2.2.16",
