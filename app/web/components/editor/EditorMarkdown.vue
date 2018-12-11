@@ -1,7 +1,7 @@
 <template>
   <div class='kp-md-editor'>
     <codemirror ref='mdEditor' :options='options' :value='code' @changes='updateMarkdown' />
-    <!-- <PerfectScrollbar /> -->
+    <PerfectScrollbar />
   </div>
 </template>
 
